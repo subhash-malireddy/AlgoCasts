@@ -13,7 +13,7 @@ function maxChar(str) {
     }
     for(const char of str){
         if(charSet.has(char)){
-            charCount[char] = charCount[char] ? charCount[char] + 1 : 2
+            charCount[char] = charCount[char] + 1 || 2
         }else{
             charSet.add(char)
         }
